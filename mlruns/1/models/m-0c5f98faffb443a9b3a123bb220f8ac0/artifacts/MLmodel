@@ -1,0 +1,23 @@
+artifact_path: file:C:/Users/AhmedElbeltagy/OneDrive - IBM/mlflow/mlruns/1/models/m-0c5f98faffb443a9b3a123bb220f8ac0/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.14.5
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.8.0
+    skops_trusted_types: null
+mlflow_version: 3.12.0
+model_id: m-0c5f98faffb443a9b3a123bb220f8ac0
+model_size_bytes: 343006
+model_uuid: m-0c5f98faffb443a9b3a123bb220f8ac0
+prompts: null
+run_id: c6dc5b79cb4f40f7bc159dd9bf23e276
+utc_time_created: '2026-05-13 19:54:36.990833'
