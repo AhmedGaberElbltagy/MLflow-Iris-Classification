@@ -8,12 +8,12 @@ The example trains Random Forest classifiers on the Iris dataset, logs each run 
 
 ```text
 .
-├── train.py            # Trains and logs Iris classifiers to MLflow
-├── promote_model.py    # Finds the best registered model version and promotes it
-├── predict.py          # Loads the production model alias and runs a sample prediction
-├── requirements.txt    # Python dependencies
-├── mlflow.db           # Local MLflow backend database
-└── mlruns/             # Local MLflow artifacts and run data
+|-- train.py            # Trains and logs Iris classifiers to MLflow
+|-- promote_model.py    # Finds the best registered model version and promotes it
+|-- predict.py          # Loads the production model alias and runs a sample prediction
+|-- requirements.txt    # Python dependencies
+|-- mlflow.db           # Local MLflow backend database
+`-- mlruns/             # Local MLflow artifacts and run data
 ```
 
 ## Requirements
