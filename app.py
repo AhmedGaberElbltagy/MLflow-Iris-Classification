@@ -3,10 +3,11 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 
 
-mlflow.set_tracking_uri("http://127.0.0.1:5000")
-
+MLFLOW_TRACKING_URI = "http://host.docker.internal:5000"
 MODEL_NAME = "iris-random-forest"
 MODEL_ALIAS = "production"
+
+mlflow.set_tracking_uri(MLFLOW_TRACKING_URI)
 
 model_uri = f"models:/{MODEL_NAME}@{MODEL_ALIAS}"
 model = mlflow.pyfunc.load_model(model_uri)
@@ -32,8 +33,9 @@ class_names = {
 def root():
     return {
         "message": "Iris MLflow model API is running",
-        "model": MODEL_NAME,
-        "alias": MODEL_ALIAS
+        "model_name": MODEL_NAME,
+        "model_alias": MODEL_ALIAS,
+        "mlflow_tracking_uri": MLFLOW_TRACKING_URI
     }
 
 

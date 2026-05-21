@@ -1,6 +1,10 @@
 mlflow
+azureml-mlflow
+azure-ai-ml
+azure-identity
 scikit-learn
 pandas
 numpy
 fastapi
 uvicorn
+pydantic
